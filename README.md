@@ -1,0 +1,2 @@
+# ffmpeg_to_hevc_python
+通过python，利用ffmpeg，将文件夹下所有的视频文件重新封装为hevc以节约硬盘
