@@ -37,7 +37,8 @@ def to_hevc(path_in):
                 continue
             os.remove(video_path_out)
             shutil.move(video_path_in, video_path_out)
-        print(f"{path_in} ALL FINISH\n" + "=" * 15)
+        print(f"{dirpath} Finished\n" + "=" * 15)
+    print(f"{path_in} ALL FINISH\n" + "=" * 15)
 
 
 def clear(path):
