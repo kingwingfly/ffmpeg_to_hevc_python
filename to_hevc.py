@@ -50,7 +50,7 @@ def clear(path):
 
 
 if __name__ == "__main__":
-    paths = ["E:\迅雷下载"]
+    paths = ["E:\Videos"]
     for path in paths:
         to_hevc(path)
         clear(path)
