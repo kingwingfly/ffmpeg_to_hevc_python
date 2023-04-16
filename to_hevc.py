@@ -26,7 +26,7 @@ def to_hevc(path_in):
                 path_out, "".join(video.split(".")[:-1:]) + ".mp4"
             )
 
-            order = f'ffmpeg -y -i "{video_path_in}" -c:v hevc_nvenc -preset slow "{video_path_out}"'
+            order = f'ffmpeg -hwaccel cuvid -y -i "{video_path_in}" -c:v hevc_nvenc -preset slow "{video_path_out}"'
             print(order)
             os.system(order)
             print(f"《{video}》 Finished\n" + "=" * 10)
